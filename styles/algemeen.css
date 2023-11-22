@@ -539,19 +539,19 @@ header nav:nth-of-type(2) ul li:nth-of-type(2) ul li {
   height: .563rem;
 }
 
-#mijn-digid-profiel {
+#my-digid-profile {
   padding: 1.5rem 0 1.5rem;
   border-bottom: .0625rem solid var(--color-navmenu-borders);
 }
 
-#mijn-digid-profiel > a {
+#my-digid-profile > a {
   text-decoration: underline;
   text-decoration-style: initial;
   text-decoration-thickness: initial;
   text-decoration-color: var(--color-text);
 }
 
-#mijn-digid-profiel a {
+#my-digid-profile a {
   /* Icoontje en tekst met een gap naast elkaar,
   met flex-box */
   display: flex;
@@ -559,13 +559,13 @@ header nav:nth-of-type(2) ul li:nth-of-type(2) ul li {
   column-gap: .525rem;
 }
 
-#mijn-digid-profiel svg {
+#my-digid-profile svg {
   max-width: 100%;
   width: 1.25rem;
   height: 1.25rem;
 }
 
-#mijn-digid-profiel path {
+#my-digid-profile path {
   width: 1.144rem;
   height: 1.215rem;
 }
@@ -651,7 +651,7 @@ header nav:nth-of-type(2) ul li:nth-child(3) ul li:nth-of-type(2) > p {
 }
 
 /* De sluitknop, onderin het uitgeklapte navigatiemenu */
-#sluitknop {
+#close-button {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -659,7 +659,7 @@ header nav:nth-of-type(2) ul li:nth-child(3) ul li:nth-of-type(2) > p {
   width: 4.25rem;
 }
 
-#sluitknop button {
+#close-button button {
   position: relative;
   background-color: transparent;
   padding: .25rem 0 .5rem;
@@ -679,7 +679,7 @@ header nav:nth-of-type(2) ul li:nth-child(3) ul li:nth-of-type(2) > p {
   column-gap: .375rem;
 }
 
-#sluitknop svg {
+#close-button svg {
   max-width: 100%;
   width: .9375rem;
   height: .9375rem;
