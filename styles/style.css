@@ -1,0 +1,448 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+    box-sizing: border-box;  
+}
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+/* jouw code */
+
+/***********************************/
+/* HANDIGE TIP VAN SANNE VOOR IMG's*/
+/* img {
+  max-width: 100%;
+} */
+/***********************************/
+
+
+/********/
+/* MAIN */
+/********/
+/* Image van een vrouwelijke DigiD gebruiker op stoel */
+main section:nth-of-type(1) img {
+  position: relative;
+  max-width: 100%;
+  left: 0;
+  right: 0;
+}
+
+/* DigiD - "Laat zien wie je bent"-section */
+#digid-hoofdvlak-ctas {
+  position: relative;
+  height: 10.75rem;
+
+  /* Flexbox gebruikt voor het oranje vlak */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Horizontaal centreren */
+  padding: .8125rem 1rem 0;
+}
+
+#digid-hoofdvlak-oranje {
+  position: relative;
+  top: -2.6875rem;
+
+  border-radius: .25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Horizontaal centreren */
+  row-gap: .75rem;
+  padding: .8125rem 1rem 1rem;
+
+  background-color: var(--color-main);
+}
+
+#digid-hoofdvlak-oranje h1 {
+  margin: 0;
+  line-height: 1rem;
+  letter-spacing: .0156rem;
+}
+
+#digid-hoofdvlak-oranje img {
+  max-width: 100%;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+#digid-hoofdvlak-oranje ul:nth-of-type(1) {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  gap: .8125rem;
+  align-items: center; /* Verticaal centreren */
+}
+
+#digid-hoofdvlak-oranje ul:nth-of-type(1) li {
+  color: var(--color-background-topbar);
+}
+
+#digid-hoofdvlak-oranje ul:nth-of-type(2) {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1rem;
+}
+
+#digid-hoofdvlak-oranje ul:nth-of-type(2) li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+
+  color: var(--color-background-topbar);
+}
+
+#digid-hoofdvlak-oranje ul:nth-of-type(2) li a:nth-of-type(1) {
+  display: block;
+  text-decoration: none;
+  color: var(--color-button-text);
+  font-size: 1.188em;
+  font-family: "rijksoverheid", Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: normal;
+
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+
+  border-radius: .25rem;
+  border-width: .0625rem;
+  border-color: var(--color-text);
+  box-shadow: 0 .125rem .25rem 0 rgba(40, 40, 40, .24);
+  background-color: var(--color-button-background);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+#digid-hoofdvlak-oranje ul:nth-of-type(2) li svg {
+  max-width: 100%;
+  width: 1rem;
+  height: 1rem;
+}
+
+#digid-hoofdvlak-oranje ul:nth-of-type(2) li path {
+  max-width: .434rem;
+  max-height: .75rem;
+  
+  color: var(--color-main);
+}
+
+/* "Machtigen"-section - Pijl naar rechts (groter dan)-icon in de knop na de tekst "Meer informatie" */
+#digid-machtigen {
+  padding: .75rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#digid-machtigen section {
+  padding: 1.375rem 1rem 1rem;
+  background-color: var(--color-inner-sections-background);
+  border-radius: .25rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: .625rem;
+}
+
+#digid-machtigen section p {
+  padding-bottom: .625rem;
+}
+
+#digid-machtigen section a {
+  padding: .875rem 1rem;
+  border-radius: .25rem;
+  box-shadow: 0 .125rem .25rem 0 rgba(40, 40, 40, .24);
+  background-color: var(--color-main);
+  cursor: pointer;
+
+  text-decoration: none;
+  color: var(--color-first-heading);
+  font-size: 1.1875em;
+  font-family: "rijksoverheid", Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: normal;
+  
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+#digid-machtigen section svg {
+  max-width: 100%;
+  width: 1rem;
+  height: 1rem;
+}
+
+#digid-machtigen section path {
+  max-width: .434rem;
+  max-height: .75rem;
+}
+
+/* "Code ontvangen"-section - Pijl naar rechts (groter dan)-icon in de knop na de tekst "Code invullen" */
+#digid-code-ontvangen {
+  padding: .75rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#digid-code-ontvangen section {
+  padding: 1.375rem 1rem 1rem;
+  background-color: var(--color-inner-sections-background);
+  border-radius: .25rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: .625rem;
+}
+
+#digid-code-ontvangen section p {
+  padding-bottom: .625rem;
+}
+
+#digid-code-ontvangen section a {
+  padding: .875rem 1rem;
+  border-radius: .25rem;
+  box-shadow: 0 .125rem .25rem 0 rgba(40, 40, 40, .24);
+  background-color: var(--color-main);
+  cursor: pointer;
+
+  text-decoration: none;
+  color: var(--color-first-heading);
+  font-size: 1.1875em;
+  font-family: "rijksoverheid", Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: normal;
+
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+#digid-code-ontvangen section svg {
+  max-width: 100%;
+  width: 1rem;
+  height: 1rem;
+}
+
+#digid-code-ontvangen section path {
+  max-width: .434rem;
+  max-height: .75rem;
+}
+
+/* "Manieren van inloggen"-section */
+#digid-manieren-van-inloggen {
+  padding: .75rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#digid-manieren-van-inloggen #manieren-van-inloggen-inner-section {
+  padding: 1.375rem 1rem 1rem;
+  background-color: var(--color-inner-sections-background);
+  border-radius: .25rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: .625rem;
+}
+
+#digid-manieren-van-inloggen ul {
+  list-style: none;
+  padding: 0;
+}
+
+#digid-manieren-van-inloggen li {
+  border-top: .0625rem solid var(--color-list-border-lines);
+}
+
+#digid-manieren-van-inloggen a {
+  padding-top: .3125rem;
+  text-decoration: none;
+  color: var(--color-navmenu-borders);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: .5rem;
+}
+
+#digid-manieren-van-inloggen img {
+  max-width: 100%;
+  width: 2.8125rem;
+  height: 2.8125rem;
+}
+
+#digid-manieren-van-inloggen h4 {
+  color: var(--color-navmenu-borders);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.icon-wrapper {
+  padding: 0;
+  width: 2.8125rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+  order: 1;
+}
+
+.text-wrapper {
+  width: 100%;
+  padding: .625rem .3125rem;
+
+  order: 2;
+}
+
+/* "Veel gezocht"-section - de groter dan-tekens in de list */
+main section:nth-of-type(6) {
+  padding: 1rem 1rem 3rem;
+}
+
+main section:nth-of-type(6) h3 {
+  padding: 0 0 0 1rem;
+}
+
+main section:nth-of-type(6) ul {
+  list-style: none;
+
+  padding: 0;
+}
+
+main section:nth-of-type(6) li {
+  position: relative;
+  padding: .9375rem 1.4375rem .9375rem 0;
+  min-height: 3rem;
+  
+  display: flex;
+  align-items: center;
+
+  border-top: .0625rem solid var(--color-list-border-lines);
+}
+
+main section:nth-of-type(6) li:last-of-type {
+  border-top: .0625rem solid var(--color-list-border-lines);
+}
+
+main section:nth-of-type(6) a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 1em;
+  font-family: "rijksoverheid", Arial, sans-serif;
+
+  display: flex;
+  align-items: center;
+  column-gap: .625rem;
+}
+
+main section:nth-of-type(6) svg {
+  max-width: 100%;
+  width: .8125rem;
+  height: .8125rem;
+
+  flex-shrink: 0;
+}
+
+main section:nth-of-type(6) path {
+  max-width: .353rem;
+  max-height: .609rem;
+
+  color: var(--color-text);
+}
+
+/* Het laatste stuk met de img van een meneer die de telefoon vasthoudt */
+main section:nth-of-type(7) {
+  padding: 1rem;
+
+  background-image: url("../images/app-min.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  width: 21.45rem;
+  height: 20.82rem;
+  border-radius: .25rem;
+
+  position: relative;
+  bottom: 1.5rem;
+  left: 1rem;
+  right: 1rem;
+}
+
+#download-content {
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  /* ALLEEN de opacity van de background-color veranderen */
+  /* Bron: https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto/Make_box_transparent */
+  background-color: rgb(255, 255, 255, 80%);
+  border-radius: .25rem;
+}
+
+#download-content h3 {
+  color: var(--color-download-section-text);
+}
+
+#download-content p {
+  color: var(--color-download-section-text);
+}
+
+main section:nth-of-type(7) > ul {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 1rem;
+
+  padding: 0;
+  list-style: none;
+
+}
+
+/* Download op de Apple Store en Google Play Store stickers */
+main section:nth-of-type(7) a > img:nth-of-type(1) {
+  max-width: 100%;
+  width: 8.725rem;
+  height: 2.92rem;
+}
+
+main section:nth-of-type(7) a > img:nth-of-type(2) {
+  max-width: 100%;
+  width: 8.725rem;
+  height: 2.639rem;
+}
+
+
+/* Het donkerblauwe Rijksoverheids-vlak tierelantijntje in het midden, nét boven de footer */
+  /*height: 1.25rem;
+  width: 2.563rem;
+  background-color: rgb(21, 66, 115);
+  margin: 0rem auto;*/
