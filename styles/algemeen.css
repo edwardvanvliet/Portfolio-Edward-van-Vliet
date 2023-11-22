@@ -21,7 +21,7 @@
       --color-button-text: #E17000;
       --color-button-background: white;
 
-      --color-background: #F5F5F5;
+      --color-background: #EEE8DC;
       --color-inner-sections-background: white;
   
       --color-background-topbar: white;
@@ -43,7 +43,7 @@
   /************************************/
   /* CUSTOM PROPERTIES VOOR DARK MODE */
   /************************************/
-  @media (prefers-color-scheme: dark) {
+  /* @media (prefers-color-scheme: dark) {
     :root {
         --color-main: #D96704;
         
@@ -73,7 +73,7 @@
         --color-background-footer: #282828;
         --color-background-card: var(--color-background-topbar);
     }
-  }
+  } */
 
 
   /****************************************/
@@ -192,14 +192,15 @@ header a {
 /* Bron skip-link: https://css-tricks.com/how-to-create-a-skip-to-content-link/ */
 .skip-link {
   display: block;
-  position: absolute;
+  position: relative;
   text-transform: uppercase;
   text-align: center;
   top: 0;
+  padding: 1rem;
   width: 100%;
   background: #fff;
   color: #b85c00;
-  z-index: 500;
+  z-index: 5000;
 
   transform: translateY(-100%);
   transition: transform 0.3s;
@@ -926,8 +927,8 @@ footer section:nth-of-type(3) > ul {
   header nav:nth-of-type(1) ul:nth-of-type(1) {
     /* Flexbox in de ul van de header gebruiken */
     display: flex;
-    justify-content: space-between;
-    column-gap: 38.0938rem;
+    justify-content: space-evenly;
+    column-gap: 40.6rem;
   }
 
   header > a:last-of-type, nav a {
