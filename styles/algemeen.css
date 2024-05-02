@@ -10,18 +10,18 @@
   /* ALGEMENE CUSTOM PROPERTIES / LIGHT MODE */
   /*******************************************/
   :root {
-      --color-main: #E17000;
+      --color-main: #174873;
 
       --color-first-heading: white;
-      --color-headers-rest: #E17000;
+      --color-headers-rest: #174873;
       --color-text: black;
       --color-footer-text: white;
       --color-download-section-text: black;
 
-      --color-button-text: #E17000;
+      --color-button-text: #174873;
       --color-button-background: white;
 
-      --color-background: #EEE8DC;
+      --color-background: #edfcffc1;
       --color-inner-sections-background: white;
   
       --color-background-topbar: white;
@@ -178,7 +178,7 @@ header {
   flex-wrap: wrap;
 
   max-width: 120rem; /* 120(r)em = 1920px voor desktop breedte */ 
-  max-height: 7.9125rem; /* rem staat voor root em */
+  /* max-height: 7.9125rem; rem staat voor root em */
 }
 
 header a {
@@ -195,11 +195,10 @@ header a {
   position: relative;
   text-transform: uppercase;
   text-align: center;
-  top: 0;
   padding: 1rem;
   width: 100%;
-  background: #fff;
-  color: #b85c00;
+  background: lightgray;
+  color: #174873;
   z-index: 5000;
 
   transform: translateY(-100%);
@@ -219,15 +218,15 @@ header a {
 header nav:nth-of-type(1) {
   position: sticky;
   background-color: var(--color-background-topbar);
-  height: 4.063rem;
+  /* height: 4.063rem; */
   max-width: 77rem;
   padding: 0 1rem;
 
   /* Flexbox gebruiken voor in de header */
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   column-gap: 5.375rem;
-  align-items: flex-start;
+  align-items: flex-start; */
 
   flex-wrap: wrap;
   flex-grow: 1;
@@ -274,19 +273,6 @@ header nav:nth-of-type(1) a:active {
 /*************************************/
 
 
-/* Rijksoverheid banner logo bovenaan de pagina in het midden */
-header .banner {
-  position: sticky;
-  max-width: 100%;
-  width: 2.563rem;
-  height: 4.688rem;
-
-  /* Flexbox */
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
 /* De menuknop rechtsboven */
 header nav:nth-of-type(1) ul > li:nth-of-type(2) {
   display: flex;
@@ -305,7 +291,7 @@ header nav:nth-of-type(1) button:first-child {
 
   list-style-type: none;
   border: none;
-  padding: .25rem .313rem .625rem 1.969rem;
+  padding: .625rem .313rem .625rem 1.969rem;
   cursor: pointer;
 
   display: flex;
@@ -864,6 +850,7 @@ footer section:nth-of-type(3) > ul {
   list-style-type: none;
 }
 
+/* Back-to-top button */
 #back-to-top {
   display: none;
   position: fixed;
@@ -871,7 +858,7 @@ footer section:nth-of-type(3) > ul {
   right: 1.25rem;
   width: 3.125rem;
   height: 3.125rem;
-  background-color: #236fb1;
+  background-color: #174873;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -939,21 +926,28 @@ footer section:nth-of-type(3) > ul {
     display: none;
   }
 
-  #digid-gebruiker-banner {
+  #edwards-main-banner {
     height: 29.25rem;
     overflow: hidden;
   }
 
-  #digid-gebruiker-banner-afbeelding {
-    width: 100%;
+  #edwards-main-picture {
+    width: 30rem;
+    height: 30rem;
+    max-width: 100%;
+    max-height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     object-fit: cover;
   }
   
-  #digid-hoofdvlak-ctas {
+  #edwards-hoofdvlak-ctas {
     height: 5.25rem;
   }
 
-  #digid-hoofdvlak-oranje {
+  #edwards-hoofdvlak-oranje {
     top: -5.75rem;
   }
 
